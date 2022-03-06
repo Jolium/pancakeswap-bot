@@ -1,0 +1,35 @@
+---
+
+  TRADE_OPTIONS:
+    # Percentage used to trigger Buy (if price falls under 5% of last transaction price)
+    # -5% is recommended
+    BUY_PERCENTAGE: -5.0
+
+    # Percentage used to trigger Sell (if price rises above 10% of last transaction price)
+    # 10% is recommended
+    SELL_PERCENTAGE: 10.0
+
+    # There is no implicit minimum trade o pancakeswap (default: 0.001 BNB)
+    MIN_TRADE: 0.001
+
+    # BTC/BNB will be bought for example
+    PAIRING: BNB
+
+  # Send email
+  SEND_ALWAYS_EMAIL: False  # False
+  SEND_ONLY_EMAIL: True  # True
+
+  # Never sends an email
+  #   SEND_ALWAYS_EMAIL: False
+  #   SEND_ONLY_EMAIL: False
+  #
+  # Sends an email only when it Buys or Sells a token or when some error occurs (default)
+  #   SEND_ALWAYS_EMAIL: False
+  #   SEND_ONLY_EMAIL: True
+  #
+  # Always sends an email each time the script is triggered
+  #   SEND_ALWAYS_EMAIL: True
+  #   SEND_ONLY_EMAIL: True <-- True or False has no influence
+
+  # Prints extra info on terminal
+  DEBUG_MODE: False  # False

@@ -1,0 +1,18 @@
+---
+  COINS:
+    - CAKE
+
+  # If you have Locked Staking and want to count it
+  # At this moment there is no binance api to get Locked Staking balances
+  LOCKED:
+    CAKE: 0.0
+
+
+  # Contract Address of Tokens
+  COINS_CONTRACT:
+    USDT: "0x55d398326f99059fF775485246999027B3197955"
+    BUSD: "0xe9e7cea3dedca5984780bafc599bd69add087d56"
+    BNB: "0x26FE7D58dCD6c637cA1D6E72bAe8FdBDefF1E5c5"
+    WBNB: "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
+    CAKE: "0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82"
+    DPR: "0xa0a2ee912caf7921eaabc866c6ef6fec8f7e90a4"

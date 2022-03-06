@@ -1,0 +1,10 @@
+---
+
+  WALLET_ADDRESS: "your_bsc_wallet_address"  # ex: 0x15df46F52544Dfb654D46Fsf6G45Df24Eb5
+  PRIVATE_KEY: "your_bsc_wallet_address_private_key"  # 54dfg46sf4e56sd46fdg4asd46er46a5fas2df464ag4as4
+
+
+  # EMAIL DETAILS
+  # At this moment only outlook.com and hotmail.com
+  EMAIL_ADDRESS: my_email_address@email.com
+  EMAIL_PASSWORD: my_password
