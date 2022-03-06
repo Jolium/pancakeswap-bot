@@ -233,13 +233,11 @@ def main():
                     if rounded_qty_in_pairing >= min_trade:
                         if rounded_qty_in_pairing < pairing_spot_balance:
                             try:
-                                # TODO: uncheck this
-                                # Create market order
-                                # market_order = TxnBot(coin).buy_token(rounded_qty_in_pairing)
-                                # time.sleep(2)
-                                market_order = 'qwertyuiopasdfghjklzxcvbnm'
+                                # Create buy order
+                                buy_order = TxnBot(coin).buy_token(rounded_qty_in_pairing)
+                                time.sleep(2)
 
-                                order[coin][transaction_field].append(market_order)
+                                order[coin][transaction_field].append(buy_order)
 
                                 message = f'{action} {rounded_qty_in_pairing} {pairing} of {coin} at ' \
                                           f'{coin_market_price} ({"{:.2f}".format(perc_difference)}) '
@@ -249,7 +247,7 @@ def main():
                                 last_transaction[coin][price_field] = coin_market_price
 
                                 if debug_mode:
-                                    print(f'Buy txn: {market_order}')
+                                    print(f'Buy txn: {buy_order}')
 
                             except Exception as e:
                                 buy_sell_error = True
@@ -317,12 +315,11 @@ def main():
 
                         if spot_coin_balance > sell_qty:
                             try:
-                                # TODO: uncheck this
-                                # market_order = TxnBot(coin).sell_token(sell_qty)
-                                # time.sleep(2)
-                                market_order = '123456789'
+                                # Create sell order
+                                sell_order = TxnBot(coin).sell_token(sell_qty)
+                                time.sleep(2)
 
-                                order[coin][transaction_field].append(market_order)
+                                order[coin][transaction_field].append(sell_order)
 
                                 message = f'{action} {sell_qty} of {coin} at {coin_market_price} ' \
                                           f'({"{:.2f}".format(perc_difference)}%)'
@@ -332,7 +329,7 @@ def main():
                                 last_transaction[coin][price_field] = coin_market_price
 
                                 if debug_mode:
-                                    print(f'Sell txn: {market_order}')
+                                    print(f'Sell txn: {sell_order}')
 
                             except Exception as e:
                                 buy_sell_error = True
